@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anoukan <anoukan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: alnoukan <alnoukan@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 0003/10/20 14:05:17 by noukan            #+#    #+#             */
-/*   Updated: 2023/11/01 06:48:29 by anoukan          ###   ########.fr       */
+/*   Created: 2026/10/07 12:14:50 by alnoukan          #+#    #+#             */
+/*   Updated: 2026/10/07 12:14:51 by alnoukan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "string.h"
+
+
+#include "libft.h
 
 char	*ft_strrchr(const char *s, int c)
 {
