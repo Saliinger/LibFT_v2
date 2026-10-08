@@ -6,11 +6,11 @@
 /*   By: alnoukan <alnoukan@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 12:13:56 by alnoukan          #+#    #+#             */
-/*   Updated: 2026/10/07 12:13:57 by alnoukan         ###   ########.fr       */
+/*   Updated: 2026/10/08 12:10:16 by alnoukan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {

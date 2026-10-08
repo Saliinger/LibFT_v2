@@ -6,16 +6,16 @@
 /*   By: alnoukan <alnoukan@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 12:13:27 by alnoukan          #+#    #+#             */
-/*   Updated: 2026/10/07 12:13:28 by alnoukan         ###   ########.fr       */
+/*   Updated: 2026/10/08 12:10:16 by alnoukan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *str, size_t l)
 
 {
-	size_t	i;
+	size_t i;
 
 	i = 0;
 	if (!dest || !str || l == 0)

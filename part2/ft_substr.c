@@ -6,11 +6,11 @@
 /*   By: alnoukan <alnoukan@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 12:13:59 by alnoukan          #+#    #+#             */
-/*   Updated: 2026/10/07 12:14:00 by alnoukan         ###   ########.fr       */
+/*   Updated: 2026/10/08 12:10:16 by alnoukan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static char	*ft_substr_2(char const *s, unsigned int start, size_t len)
 {

@@ -6,11 +6,11 @@
 /*   By: alnoukan <alnoukan@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 12:11:20 by alnoukan          #+#    #+#             */
-/*   Updated: 2026/10/07 12:11:21 by alnoukan         ###   ########.fr       */
+/*   Updated: 2026/10/08 12:10:16 by alnoukan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_atoi(const char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: alnoukan <alnoukan@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 12:13:20 by alnoukan          #+#    #+#             */
-/*   Updated: 2026/10/07 12:14:35 by alnoukan         ###   ########.fr       */
+/*   Updated: 2026/10/08 12:30:22 by alnoukan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -25,8 +25,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	d = (char *)malloc(i + j + 1);
 	if (d == NULL)
 		return (NULL);
-	ft_strcpy(d, (char *)s1);
-	ft_strcpy(d + i, (char *)s2);
+	ft_memcpy(d, s1, i);
+	ft_memcpy(d + i, s2, j + 1);
 	return (d);
-
 }
