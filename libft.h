@@ -6,7 +6,7 @@
 /*   By: alnoukan <alnoukan@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/07 12:15:02 by alnoukan          #+#    #+#             */
-/*   Updated: 2026/10/07 12:15:42 by alnoukan         ###   ########.fr       */
+/*   Updated: 2026/10/08 10:37:58 by alnoukan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,10 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
+
+/* ******** */
+/* Part 1   */
+/* ******** */
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
@@ -49,6 +53,11 @@ char				*ft_strnstr(const char *str, const char *to_find,
 int					ft_atoi(const char *str);
 void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *src);
+
+/* ******** */
+/* Part 2   */
+/* ******** */
+
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
@@ -60,6 +69,10 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
+
+/* ******** */
+/* Part 3   */
+/* ******** */
 
 t_list				*ft_lstnew(void *content);
 void				ft_lstadd_front(t_list **lst, t_list *new);
