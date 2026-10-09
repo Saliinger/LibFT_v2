@@ -29,7 +29,29 @@ make
 * **`make clean`**: Removes all object (`.o`) files.
 * **`make fclean`**: Removes object files as well as the generated `libft.a` archive.
 * **`make re`**: Performs a full re-compilation (`fclean` followed by `make`).
-* **`make bonus`**: Compiles both mandatory functions and bonus linked list routines.
+* **`make test`**: Builds and runs the local test program in `tests/` against `libft.a`. This rule is not part of the graded project and `tests/` is not linked into the library.
+
+### Testing
+
+The `tests/` folder holds a local test harness that is not compiled into `libft.a`
+and is not part of the submitted file list (`Makefile`, `libft.h`, `ft_*.c`).
+It is split across several files, none holding more than five functions, so that
+`norminette .` is clean over the whole repository.
+It exercises every function against the behaviours defined in the subject and in the
+corresponding manual pages, including boundary cases (empty input, `SIZE_MAX` lengths,
+`INT_MIN`/`INT_MAX`, allocation failures and `NULL` callbacks). Run it with:
+
+```bash
+make test
+
+```
+
+Sanitizer pass over the library and the harness:
+
+```bash
+cc -g -fsanitize=address,undefined -I. tests/*.c ft_*.c -o /tmp/ft_test && /tmp/ft_test
+
+```
 
 ### Usage
 
@@ -80,4 +102,17 @@ cc main.c libft.a
 
 ### AI Usage
 
-* **AI Tools**: Artificial intelligence was utilized exclusively for drafting and structuring this `README.md` file layout and organizing project documentation requirements. No AI tools were used to generate, write, or solve the C source code or logic for the library functions, keeping strictly in line with 42’s learning objectives and individual peer-evaluation preparedness.
+* **Manual work**: All 43 library functions in `ft_*.c` and `libft.h` were designed and
+  written by hand, function by function, from the subject and the manual pages.
+* **AI for documentation**: AI helped draft and structure this `README.md`.
+* **AI for review, not for authoring**: The library was then reviewed with AI, which was
+  used as a reviewer and explainer rather than as an author. It reported Norm findings,
+  boundary and failure-path bugs (empty input to `ft_split`, oversized `len` in
+  `ft_substr`, the `INT_MAX` ceiling in `ft_calloc`, `NULL` callbacks in the `ft_lst*`
+  group), and the one helper missing `static` linkage. Corrections were applied to those
+  reported spots only; no function was generated from scratch by AI.
+* **AI for the test harness**: The local test program in `tests/` was drafted with AI
+  assistance and verified by running it under AddressSanitizer and UndefinedBehaviourSanitizer.
+* **Purpose of the tooling**: Sanitizers, `norminette` and the harness were used to check
+  the code, not to avoid reading it. Every change listed above is explainable line by line
+  during peer evaluation.

@@ -1,2 +1,5 @@
 *.o
-libft
+*.a
+test_libft
+a.out
+.qwen/
